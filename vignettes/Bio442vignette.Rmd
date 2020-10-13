@@ -1,0 +1,24 @@
+---
+title: "Bio442vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Bio442vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Bio442 is a test package for use in **Data Analysis in R**
+
+```{r setup}
+library(Bio442)
+
+fastdemo <- better_split(raw_data, "[0-9.]+")
+
+```
